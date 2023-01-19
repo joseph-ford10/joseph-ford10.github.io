@@ -65,3 +65,21 @@ body {
 #sprint-one-post-one, #sprint-two-post-one {
   margin-bottom: 1.5rem;
 }
+
+.post-title-content {
+  text-align: center;
+}
+
+.post-main-title {
+  font-size:5rem;
+  margin-bottom: 2rem;
+}
+
+.post-wrapper {
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.post-core-content {
+  font-size: 2rem;
+}
