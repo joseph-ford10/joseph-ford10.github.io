@@ -19,3 +19,25 @@ body {
   margin-left: 2rem;
   color: white;
 }
+
+.welcome-content {
+  display: flex;
+  margin-top: 3rem;
+}
+
+.welcome-message-main {
+  margin-left: 2rem;
+}
+
+.welcome-message-main {
+  font-size: 7rem;
+  max-width: 40%;
+}
+
+.welcome-message-small {
+  font-size: 3rem;
+  max-width: 50%;
+  align-self: center;
+  line-height: 6rem;
+  margin-left: 2.5rem;
+}
