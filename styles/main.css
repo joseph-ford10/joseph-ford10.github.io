@@ -83,3 +83,12 @@ body {
 .post-core-content {
   font-size: 2rem;
 }
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: white;
+}
