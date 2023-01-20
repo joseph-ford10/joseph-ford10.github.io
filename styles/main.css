@@ -97,8 +97,21 @@ a:visited {
 .post-wrapper {
   margin-left: 15%;
   margin-right: 15%;
+  text-align: justify;
 }
 
 .post-core-content {
   font-size: 2rem;
+}
+
+#photo-1 {
+ text-align: center;
+}
+
+.photo-caption {
+  font-size: 1rem;
+}
+
+.link-style {
+  text-decoration: underline;
 }
