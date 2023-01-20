@@ -132,3 +132,22 @@ a:visited {
 .link-style {
   text-decoration: underline;
 }
+
+.about-content {
+  display: flex;
+  margin-top: 0;
+  margin-left: 3.5rem;
+}
+
+.about-me-head {
+  font-size: 7rem;
+  max-width: 40%;
+  align-self: center;
+}
+
+.about-me-text {
+  font-size: 1.5rem;
+  max-width: 50%;
+  line-height: 3rem;
+  margin-left: 3.5rem;
+}
