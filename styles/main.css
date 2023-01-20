@@ -86,7 +86,7 @@ a:visited {
 
 .post-title {
   list-style: none;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-decoration: underline;
 }
 
@@ -118,7 +118,7 @@ a:visited {
 }
 
 .post-core-content {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 #photo-1 {
@@ -138,7 +138,7 @@ a:visited {
 
 .prev-post, .back-to-top, .next-post {
   list-style-type: none;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-decoration: underline;
 }
 
