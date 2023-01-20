@@ -151,3 +151,24 @@ a:visited {
   line-height: 3rem;
   margin-left: 3.5rem;
 }
+
+.post-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+  margin-bottom: 2rem;
+}
+
+.prev-post, .back-to-top, .next-post {
+  list-style-type: none;
+  font-size: 2rem;
+  text-decoration: underline;
+}
+
+.prev-post {
+  margin-left: 2rem;
+}
+
+.next-post {
+  margin-right: 2rem;
+}
