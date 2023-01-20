@@ -129,29 +129,6 @@ a:visited {
   font-size: 1rem;
 }
 
-.link-style {
-  text-decoration: underline;
-}
-
-.about-content {
-  display: flex;
-  margin-top: 0;
-  margin-left: 3.5rem;
-}
-
-.about-me-head {
-  font-size: 7rem;
-  max-width: 40%;
-  align-self: center;
-}
-
-.about-me-text {
-  font-size: 1.5rem;
-  max-width: 50%;
-  line-height: 3rem;
-  margin-left: 3.5rem;
-}
-
 .post-nav {
   display: flex;
   justify-content: space-between;
@@ -172,3 +149,44 @@ a:visited {
 .next-post {
   margin-right: 2rem;
 }
+
+.link-style {
+  text-decoration: underline;
+}
+
+.about-content {
+  display: flex;
+  margin-top: 3.5rem;
+  margin-left: 3.5rem;
+}
+
+.about-me-head {
+  font-size: 7rem;
+  max-width: 40%;
+  margin-top: 8rem;
+}
+
+.about-me-text {
+  font-size: 1.5rem;
+  max-width: 50%;
+  line-height: 3rem;
+  margin-left: 3.5rem;
+  text-align: justify;
+}
+
+
+@media only screen and (max-width: 1100px) {
+  .about-content {
+   display: block;
+ }
+  .about-me-head {
+   max-width: 100%;
+  }
+
+  .about-me-text {
+   max-width: 100%;
+   margin-left: 0;
+   margin-right: 3.5rem;
+  }
+}
+
