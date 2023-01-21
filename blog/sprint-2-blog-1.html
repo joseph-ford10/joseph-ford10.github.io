@@ -38,15 +38,15 @@
         <img src="../Images/sprint-2-blog-1-photo.jpeg" width="700" height="400" alt="Annotated photo of webpage">
       </div>
       <p>
-        I’ve identified three ‘tops’ here. There’s the very top of the page, beginning just underneath the address bar. 
-        There’s a second top just underneath the navigation bar. And there’s a third top… Of course there are more below that, as well. 
-        It’s tops all the way down and, in isolation, <span class="code-demonstrate">top:</span> could mean any of them.
+        I’ve marked three ‘tops’ here. There’s the very top of the page, beginning just underneath the address bar. 
+        There’s a second top just underneath the navigation bar. And there’s a third top just after the title. Of course there are more below that, as well. 
+        It’s tops all the way down and, on its own, <span class="code-demonstrate">top:</span> could mean any of them.
       </p>
       <p>
         Telling CSS what we mean when we say <span class="code-demonstrate">top</span> or <span class="code-demonstrate">left:</span> (or 
         <span class="code-demonstrate">bottom:</span> or <span class="code-demonstrate">right:)</span> is where the <span class="code-demonstrate">position:</span>
         property comes in. It might sound as though this property would be a way of telling CSS where to place an element. It’s tempting to type, say, 
-        <span class="code-demonstrate">position:center</span> and expect CSS to plonk our element in the middle. 
+        <span class="code-demonstrate">position:center</span> (note: not valid code) and expect CSS to plonk our element in the middle. 
       </p>
       <p>
         In fact, <span class="code-demonstrate">position:</span> is not so much about telling CSS where to place an element. It’s more about telling CSS how it should treat our instructions of where 
@@ -60,7 +60,7 @@
         They are <span class="code-demonstrate">position:relative</span>, <span class="code-demonstrate">position:absolute</span>, and 
         <span class="code-demonstrate">position:fixed</span>. Let's go through each of them.
       </p>
-      <h4>position:relative</h4>
+      <h3>position:relative</h3>
       <p>This value tells CSS that when we position the item, it should be positioned relative to where it would be if we didn’t do anything to it. 
       This means that the <span class="code-demonstrate">top:</span>, <span class="code-demonstrate">right:</span>, 
       <span class="code-demonstrate">bottom:</span>, and <span class="code-demonstrate">left:</span> properties finally take on a specific meaning: 
@@ -70,7 +70,7 @@
       <p>You can think of <span class="code-demonstrate">position:relative</span> as unlocking an element. Instead of being forced to sit where the HTML file told it 
         to sit, it can now be moved around freely. Remember, though, that it still remembers where the HTML told it to sit originally and uses that as a guide. 
         In fact, if you set <span class="code-demonstrate">position:relative</span> without doing anything else, the element will simply stay in place. </p>
-      <h4>position:absolute</h4>
+      <h3>position:absolute</h3>
       <p>
         Like <span class="code-demonstrate">position:relative</span>, <span class="code-demonstrate">position:absolute</span> ‘unlocks’ an element and allows it to move. 
         It does this in a different way, though. Whereas <span class="code-demonstrate">position:relative</span> tells an element to move using its original position 
@@ -79,13 +79,21 @@
       <p>
         Let's look at an example.
       </p>
-      <div class="example-2" id="example-2-1"></div>
+      <div class="sprint-2-example-2" id="example-2-1">
+        <div class="box-container">
+          <div id="two-one-blue-circle" class="blue-circle"></div>
+        </div>
+        </div>
       <p>
         Here we have an element contained inside another element; the box is the ancestor and the circle is the descendant. 
         Both elements are currently set to <span class="code-demonstrate">position:relative</span>. Because we have not set a position value, the circle is sitting 
         where it would normally sit, in the top-left corner of its container. Now let’s try setting a position value of <span class="code-demonstrate">right:110px.</span>
       </p>
-      <div class="example-2" id="example-2-2"></div>
+      <div class="sprint-2-example-2" id="example-2-1">
+        <div class="box-container">
+          <div class="blue-circle" id="two-two-blue-circle"></div>
+        </div>
+      </div>
       <p>
         As we would expect, based on the previous example, the circle is pushed 110 pixels right relative to where it would normally sit. 
         Note that this pushes it out of the container. 
@@ -93,7 +101,11 @@
       <p>
         Now let’s try changing the circle to <span class="code-demonstrate">position:absolute</span> while keeping the value the same. 
       </p>
-      <div class="example-2" id="example-2-3"></div>
+      <div class="example-2" id="example-2-3">
+        <div class="box-container">
+          <div class="blue-circle" id="two-three-blue-circle"></div>
+        </div>
+      </div>
       <p>Instead of being pushed away from the right, the circle has seemingly been pushed to the right. What’s happened here? 
         Simply put, the point of reference has changed. Instead of being pushed to the right relative to its own normal position, the circle instead uses the right side of
         its ancestor (the box) as its reference point. This comes back to what I was saying at the start: using the <span class="code-demonstrate">position:</span>

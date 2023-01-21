@@ -195,3 +195,45 @@ a:visited {
   font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
 }
+
+#example-2-1 {
+  text-align: center;
+  margin: auto;
+}
+
+.box-container {
+  width: 300px;
+  height: 300px;
+  border-style: solid;
+  border-color: black;
+  margin: auto;
+  position: relative;
+}
+
+.blue-circle {
+  width: 75px;
+  height: 75px;
+  border-style: solid;
+  color: blue;
+  border-radius: 55%;
+}
+
+#two-one-blue-circle {
+  width: 75px;
+  height: 75px;
+  border-style: solid;
+  color: blue;
+  border-radius: 55%;
+  position: relative;
+}
+
+#two-two-blue-circle {
+  position: relative;
+  right: 100px;
+}
+
+#two-three-blue-circle {
+  position: absolute;
+  right: 100px;
+}
+
