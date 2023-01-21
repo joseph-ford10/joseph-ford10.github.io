@@ -35,7 +35,7 @@
         Let’s take a look at this very page.
       </p>
       <div id="photo-1">
-        <img src="../Images/sprint-2-blog-1-photo.jpeg" width="700" height="400" alt="Annotated photo of webpage">
+        <img src="../Images/sprint-2-blog-1-photo.jpeg" width="700" height="400" alt="Annotated photo of webpage" id="sprint-2-blog-1-photo">
       </div>
       <p>
         I’ve marked three ‘tops’ here. There’s the very top of the page, beginning just underneath the address bar. 
@@ -57,8 +57,8 @@
       </p>
       <p>
         There are three common values associated with the <span class="code-demonstrate">position:</span> property. 
-        They are <span class="code-demonstrate">position:relative</span>, <span class="code-demonstrate">position:absolute</span>, and 
-        <span class="code-demonstrate">position:fixed</span>. Let's go through each of them.
+        They are <span class="code-demonstrate">relative</span>, <span class="code-demonstrate">absolute</span>, and 
+        <span class="code-demonstrate">fixed</span>. Let's go through each of them.
       </p>
       <h3>position:relative</h3>
       <p>This value tells CSS that when we position the item, it should be positioned relative to where it would be if we didn’t do anything to it. 
@@ -67,14 +67,14 @@
       “Move this element away from the top/right/bottom/left of wherever it is now.” (You can also control the z-index, but that’s beyond the scope of this post.)
       </p>
       <div id="example-1"></div>
-      <p>You can think of <span class="code-demonstrate">position:relative</span> as unlocking an element. Instead of being forced to sit where the HTML file told it 
+      <p>You can think of <span class="code-demonstrate">:relative</span> as unlocking an element. Instead of being forced to sit where the HTML file told it 
         to sit, it can now be moved around freely. Remember, though, that it still remembers where the HTML told it to sit originally and uses that as a guide. 
-        In fact, if you set <span class="code-demonstrate">position:relative</span> without doing anything else, the element will simply stay in place. </p>
+        In fact, if you set <span class="code-demonstrate">:relative</span> without doing anything else, the element will simply stay in place. </p>
       <h3>position:absolute</h3>
       <p>
-        Like <span class="code-demonstrate">position:relative</span>, <span class="code-demonstrate">position:absolute</span> ‘unlocks’ an element and allows it to move. 
-        It does this in a different way, though. Whereas <span class="code-demonstrate">position:relative</span> tells an element to move using its original position 
-        as a starting point, <span class="code-demonstrate">position:absolute</span> tells an element to move using its nearest, non-static ancestor as a starting point. 
+        Like <span class="code-demonstrate">:relative</span>, <span class="code-demonstrate">:absolute</span> ‘unlocks’ an element and allows it to move. 
+        It does this in a different way, though. Whereas <span class="code-demonstrate">:relative</span> tells an element to move using its original position 
+        as a starting point, <span class="code-demonstrate">:absolute</span> tells an element to move using its nearest, non-static ancestor as a starting point. 
       </p>
       <p>
         Let's look at an example.
@@ -112,8 +112,8 @@
         property allows us to tell CSS exactly what we mean when we say “move this away from the right.”
       </p>
       <p>
-        Note that unlike <span class="code-demonstrate">position:relative</span>, <span class="code-demonstrate">position:absolute</span> removes an element from the flow of the page. 
-        Add it to an element and any surrounding elements will snap together as if it’s not there. In one way, this makes <span class="code-demonstrate">position:absolute</span>
+        Note that unlike <span class="code-demonstrate">:relative</span>, <span class="code-demonstrate">:absolute</span> removes an element from the flow of the page. 
+        Add it to an element and any surrounding elements will snap together as if it’s not there. In one way, this makes <span class="code-demonstrate">:absolute</span>
         very powerful. You can put it wherever you want, including on top of other elements. Of course, this can also cause<span id="problem-text">problems.</span>
       </p>
     </div>

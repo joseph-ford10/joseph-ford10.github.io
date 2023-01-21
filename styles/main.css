@@ -192,13 +192,17 @@ a:visited {
 }
 
 .code-demonstrate {
-  font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
 }
 
 #example-2-1 {
   text-align: center;
   margin: auto;
+}
+
+#sprint-2-blog-1-photo {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .box-container {
@@ -236,4 +240,3 @@ a:visited {
   position: absolute;
   right: 100px;
 }
-
