@@ -22,11 +22,17 @@
       </div>
     <div class="post-core-content">
       <p>
-
-
-
+        Positioning content on a webpage seems like it should be simple. You have some headings, you have some text, you have some pictures. 
+        Surely you can just stick them where you want, like notes on a pinboard?
+      </p>
       <p>
-      Te Houtaewa was the fastest runner of his day and played many pranks on his peoples enemies. One morning his mother wanted kumara for the hangi (earth oven) and asked Te Houtaewa to go to the gardens at Te Kao, a short distance away. He agreed to fetch the kumara and told his mother to prepare the hangi.
+        You can, actually. It’s just that the pins you’re going to be using are CSS rules. Some of those rules sound deceptively straightforward. 
+        For example, if you type left:10px, you’re telling CSS to move your element ten pixels away from the left. Combine it with top:20px and you’re telling 
+        CSS to move your element 20 pixels away from the top as well. 
+      </p>
+      <p>
+        The tricky part is conveying to CSS what you mean by ‘left’ and ‘top’ (and ‘right’ and ‘bottom’). For example, there are lots of ‘tops’ on a webpage. 
+        Let’s take a look at this very page.
       </p>
       <div id="photo-1">
         <img src="../Images/sprint-1-blog-1-photo.jpg" width="600" height="400" alt="Photo of mountain and lake">
@@ -36,10 +42,66 @@
         </figcaption>
       </div>
       <p>
-      Instead of going to the nearby gardens, Te Houtaewa set off for Ahipara as he wanted to annoy some Te Rarawa people who lived there. Carrying two large baskets for the kumara, he ran like the wind, completing the journey over the hard sands of Te Oneroa a Tohe (Ninety Mile Beach) in the few hours it takes a good hangi to heat up properly. On reaching Ahipara, he went straight to the people's kumara pataka (storehouse for the sweet potatoes) situated at the foot of the hill Whangatauatia.
+        I’ve identified three ‘tops’ here. There’s the very top of the page, beginning just underneath the address bar. 
+        There’s a second top just underneath the navigation bar. And there’s a third top… Of course there are more below that, as well. 
+        It’s tops all the way down and, in isolation, top: could mean any of them.
       </p>
       <p>
-      While Te Houtaewa was filling his baskets with kumara he was spotted stealing the kai (food). He was immediately recognised.
+        Telling CSS what we mean when we say top: or bottom: or left: or right: is where the position: property comes in. 
+        It might sound as though this property would be a way of telling CSS where to place an element. It’s tempting to type, say, position:center and expect 
+        CSS to plonk our element in the middle. 
+      </p>
+      <p>
+        In fact, position: is not so much about telling CSS where to place an element. It’s more about telling CSS how it should treat our instructions of where 
+        to place elements. Combined with the top: right: bottom: left: properties, it can be a very powerful tool. If we don’t tell CSS how we want our elements to be 
+        positioned, then it will by default keep them locked in place based on their position in the HTML file (position:static). 
+      </p>
+      <p>
+        There are three common values associated with the position: property. They are position:relative, position: absolute, and position:fixed. 
+        Let's go through each of them.
+      </p>
+      <h4>position:relative</h4>
+      <p>This value tells CSS that when we position the item, it should be positioned relative to where it would be if we didn’t do anything to it. 
+      This means that the top: right: bottom: and left: properties finally take on a specific meaning: “Move this element away from the top/right/bottom/left of wherever 
+      it is now.” (You can also control the z-index, but that’s beyond the scope of this post.)
+      </p>
+      <div id="example-1"></div>
+      <p>You can think of position:relative as unlocking an element. Instead of being forced to sit where the HTML file told it to sit, it can now be moved around freely.
+        Remember, though, that it still remembers where the HTML told it to sit originally and uses that as a guide. In fact, if you set position:relative without doing 
+        anything else, the element will simply stay in place. </p>
+      <h4>position:absolute</h4>
+      <p>
+        Like position:relative, position:absolute ‘unlocks’ an element and allows it to move. It does this in a different way, though. 
+        Whereas position:relative tells an element to move using its original position as a starting point, position:absolute tells an element to move using its nearest, 
+        non-static ancestor as a starting point. 
+      </p>
+      <p>
+        Let's look at an example.
+      </p>
+      <div class="example-2" id="example-2-1"></div>
+      <p>
+        Here we have an element contained inside another element; the box is the ancestor and the circle is the descendant. 
+        Both elements are currently set to position:relative. Because we have not set a position value, the circle is sitting where it would normally sit, 
+        in the top-left corner of its container. Now let’s try setting a position value of right:110px.
+      </p>
+      <div class="example-2" id="example-2-2"></div>
+      <p>
+        As we would expect, based on the previous example, the circle is pushed 110px right relative to where it would normally sit. 
+        Note that this pushes it out of the container. 
+      </p>
+      <p>
+        Now let’s try changing the circle to position:absolute while keeping the value the same. 
+      </p>
+      <div class="example-2" id="example-2-3"></div>
+      <p>Instead of being pushed away from the right, the circle has seemingly been pushed to the right. What’s happened here? 
+        Simply put, the point of reference has changed. Instead of being pushed to the right relative to its own normal position, the circle instead uses the right side of
+        its ancestor (the box) as its reference point. This comes back to what I was saying at the start—using the position: property allows us to tell 
+        CSS exactly what we mean when we say “move this away from the right.”
+      </p>
+      <p>
+        Note that, unlike position:relative, position:absolute removes an element from the flow of the page. Add it to an element and any surrounding elements will 
+        snap together as if it’s not there. In one way, this makes position:absolute very powerful: you can put it wherever you want, including on top of other elements. 
+        Of course, this can also cause<span id="problem-text">problems.</span>
       </p>
     </div>
     <div class="next-page">
