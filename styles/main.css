@@ -50,14 +50,25 @@ a:visited {
 .welcome-message-main {
   font-size: 7rem;
   max-width: 40%;
+  margin-top: 15rem;
 }
 
 .welcome-message-small {
-  font-size: 3rem;
+  font-size: 2rem;
   max-width: 50%;
   align-self: center;
-  line-height: 5rem;
-  margin-left: 3.5rem;
+  line-height: 4rem;
+  margin-left: 10rem;
+  margin-top: 10rem;
+}
+
+#welcome-small-line-1 {
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+
+#welcome-small-line-2 {
+  margin-top: 0rem;
 }
 
 @media only screen and (max-width: 1100px) {
@@ -71,7 +82,7 @@ a:visited {
    .welcome-message-small {
     max-width: 100%;
     margin-left: 0;
-
+    margin-top: 0;
    }
 }
 
