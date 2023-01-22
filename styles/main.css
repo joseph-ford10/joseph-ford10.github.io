@@ -246,3 +246,26 @@ a:visited {
   position: absolute;
   right: 100px;
 }
+
+.blog-question {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+.blog-answer {
+  margin-top: 0;
+}
+
+#top-question {
+  margin-top: 5rem;
+}
+
+#photo-2 {
+  text-align: center;
+}
+
+#sprint-1-blog-2-photo {
+  width: auto;
+  margin-top: 2rem;
+  margin-bottom: 0rem;
+}
