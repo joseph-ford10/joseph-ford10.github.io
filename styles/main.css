@@ -2,6 +2,8 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   font-weight: 500;
+  padding-top: 70px;
+  z-index: 100;
 }
 
 
@@ -22,6 +24,10 @@ a:visited {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   background-color: black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin-bottom: 30px;
 }
 
 .navlink-one, .navlink-two, .navlink-three {
