@@ -108,11 +108,11 @@ a:visited {
   text-decoration: underline;
 }
 
-#sprint-one-post-one, #sprint-two-post-one {
+#sprint-one-post-one, #sprint-two-post-one, #sprint-three-post-one {
   margin-bottom: 1.5rem;
 }
 
-#sprint-2-heading {
+#sprint-2-heading, #sprint-3-heading {
   margin-top: 3rem;
 }
 
