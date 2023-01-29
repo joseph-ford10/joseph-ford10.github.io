@@ -286,3 +286,23 @@ a:visited {
   margin-top: 2rem;
   margin-bottom: 0rem;
 }
+
+.JS-blog-example {
+  margin: auto;
+}
+
+.JS-blog-list {
+  list-style-type: none;
+  margin: auto;
+  font-weight: bold;
+}
+
+.indented-blog-example {
+  margin-left: 40px;
+  font-weight: bold;
+}
+
+.line-indent {
+  padding-left: 10px;
+}
+
