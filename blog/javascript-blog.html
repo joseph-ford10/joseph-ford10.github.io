@@ -1,0 +1,236 @@
+  <!DOCTYPE html>
+<html>
+  <head>
+    <title>All about JavaScript</title>
+    <meta charset="UTF-8">
+    <link href="../styles/main.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="navbar">
+      <nav>
+        <ul class="navlinks">
+          <li class="navlink-one"><a href="../index.html"><span class="navlink-text">Home</span></a></li>
+          <li class="navlink-two"><a href="../about-page/about.html"><span class="navlink-text">About</span></a></li>
+          <li class="navlink-three"><a href="../contents-file/posts-list.html"><span class="navlink-text">Posts</span></a></li>
+        </ul>
+    </div>
+    <div class="post-wrapper">
+      <div class="post-title-content">
+        <h1 class="post-main-title">JavaScript</h1>
+        <h2 class="post-subtitle">Let's learn about one of the most important web development technologies</h2>
+        <h3 class="post-date">29 January 2023</h3>
+      </div>
+    <div class="post-core-content">
+      <h2>JavaScript: How does it relate to HTML and CSS?</h2>
+      <p>
+        Along with HTML and CSS, JavaScript is one of the core technologies of the modern web. It is also, perhaps, the most powerful of the three.
+      </p>
+      <p>
+        You can think of HTML and CSS as specialists with clearly-defined jobs. HTML's job is to present content (like these very words) 
+        in a structured way; CSS's job is to take that content and make it pretty.
+      </p>
+      </p>
+        JavaScript's job is... well, that's the thing. JavaScript doesn't have a single, defined job--it's a generalist. At its most basic, 
+        JavaScript can do the same things that HTML and CSS do, presenting content and styling it. It can also, though, build powerful apps
+        within websites. It does all of this by building upon (and changing) the groundwork laid by its specialist siblings.
+      <h2>The DOM</h2>
+      <p>
+        However, when JavaScript adds to or edits a page, it is not making changes to the HTML and CSS files. Instead, it makes changes to a copy of the 
+        HTML that is generated when the page loads. 
+      </p>
+      <p>
+        Calling it a ‘copy’ is somewhat inaccurate, actually, because it’s not an exact replica of the 
+        HTML. Instead, the page structure is rendered as a hierarchical series of ‘nodes’ that the 
+        JavaScript can access and manipulate as necessary. This not-quite-a-copy is called the 
+        Document Object Model, or DOM. By manipulating the DOM, JavaScript can make adjustments to the 
+        version of the page that a user sees without affecting the underlying HTML file. 
+      </p>
+      <p>
+        This can be useful in all sorts of situations. A classic example would be having some sort of 
+        timer or clock on the page. This would not be possible with HTML alone because HTML files are 
+        static. JavaScript, however, can put a timer on the page by manipulating the DOM. 
+      </p>
+      <p>
+        So, how does JavaScript interpret the instructions it’s given?
+      </p>
+      <h2>Control flow and loops</h2>
+      <p>
+        Imagine you’ve let your friend borrow your (quite old, quite rundown) car. The next day, 
+        your friend phones you asking for help—they can’t seem to get the car to start. As the car’s 
+        owner, you know that, because it’s so old and rundown, there’s a very complex, very involved 
+        trick to getting it started again when it behaves like this. To pull off this trick, your friend 
+        will need to do exactly as you say in exactly the order that you say.
+      </p>
+      <p>
+        You start issuing instructions down the phone: 
+      </p>
+      <div class="JS-blog-example">
+        <ul class="JS-blog-list">
+          <li>"Put the key in the ignition"</li>
+          <li>"Wind the window down exactly halfway"</li>
+          <li>"Remove the key from the ignition"</li>
+          <li>"Turn the headlights on"</li>
+        </ul>
+      </div>
+      <p>
+        So far, the number of instructions you’ve given matches the number of times you’ve spoken; 
+        one utterance, one instruction. However, you’re coming up to the bit where the steering wheel 
+        needs to be tapped exactly six times. You could, if you wanted to, stick to your current rhythm 
+        and say: 
+      </p>
+      <div class="JS-blog-example">
+        <ul class="JS-blog-list">
+          <li>"Tap the steering wheel"</li>
+          <li>"Tap the steering wheel"</li>
+          <li>"Tap the steering wheel"</li>
+          <li>"Tap the steering wheel"</li>
+          <li>"Tap the steering wheel"</li>
+          <li>"Tap the steering wheel"</li>
+      </div>
+      <p>
+        However, this feels like a waste of breath and energy. Your friend knows how to count, 
+        your friend is the one performing the task, so why not just say: 
+      </p>
+      <p class="indented-blog-example">"Tap the steering wheel six times"</p>
+      <p>
+        Issuing instructions to JavaScript is similar to issuing instructions to your friend. 
+        Normally, you will be telling JavaScript to move forward in a linear, top-to-bottom way, 
+        one instruction followed by the other. There will be occasions, though, when something will 
+        need to be done multiple times. The most efficient way of doing this is take your core instruction 
+        (“tap the steering wheel”) and phrase it in a way that makes clear how many times it needs to be 
+        done. In the case of JavaScript, this would be done with a loop. For example:
+      </p>
+      <p class="indented-blog-example">for (let i=0; i < 6; i++) {<br>alert('tap the steering wheel')<br>}</p>
+      <p>
+        As complex as it might look, this really is just a version of the instruction above. 
+        The order is slightly different, but even that can be converted into natural language. 
+        Instead of saying “tap the steering wheel six times”, the JavaScript instruction is closer to 
+        “Okay, you’re going to need to do this next thing six times” (line 1) followed by “tap the 
+        steering wheel” (line 2). (Note that JavaScript doesn't have an actual steering wheel to tap here; running this code would simply
+        make the browser pop up six boxes with the phrase "tap the steering wheel" inside.) 
+      </p>
+      <p>
+        Of course, you won’t always know exactly how many times an action will need to be carried out—and that’s fine with JavaScript. 
+        Just as you could tell your friend to tap the steering until, say, they hear a certain sound, you could tell a JavaScript loop to run until a 
+        particular criterion has been met. 
+      </p>
+      <p>
+        Next, let’s look at arrays and objects. 
+      </p>
+      <h2>Arrays and objects</h2>
+      <p>
+        Arrays and objects are, along with variables, important ways of storing data in JavaScript. 
+        Let’s start with arrays. Just as a variable can store a single value, arrays can store multiple 
+        values in a kind of list. Here’s an example of an array being created and told to store the numbers one to 
+        five.
+      </p>
+      <p class="indented-blog-example">let myArray = [1, 2, 3, 4, 5]</p>
+      <p>
+        Don’t be fooled by the simplicity of this example, though. Although an array can store a series 
+        of single-digit numbers, it can also store many other things—including other arrays! Accessing an 
+        item within an array is pretty simple, however. You simply take the name of the array and, using 
+        square brackets, specify the index of whatever it is you want to access. If we wanted to pull the 
+        number three from the above array, for example, we would simply take the name of the array 
+        (myArray) and use the number… two? 
+      </p>
+      <p class="indented-blog-example">myArray[2]</p>
+      <p>
+        Yes--arrays start counting from zero.
+      </p>
+      <p>
+        Now let's see an example of an object being declared. 
+      </p>
+      <p class="indented-blog-example">let myObject = {sides:"8", colour:"yellow", size:"500"}</p>
+      <p>
+        Leaving aside the question of what is being described in this example (I'm not sure either, to be honest), we can see that objects, while bearing some 
+        resemblance to arrays, are different. Instead of listing values sequentially, they store values ("8", "yellow", "500", in the example above) 
+        in association with keys ("sides", "colour", "size"). These keys can be used to access the values with either square brackets: 
+      <p class="indented-blog-example">myObject[colour]</p>
+        Or dot notation: 
+      <p class="indented-blog-example">myObject.sides</p>
+      </p>
+      <p>
+        With arrays and objects covered, let's look at another important JavaScript concept: functions. 
+      </p>
+      <h2>What are functions?</h2>
+      <p>
+        Let’s go back to the ‘borrowed car’ situation above. Imagine that part of getting your car to 
+        start involves a complex sequence actions that need to be done together. Imagine, also, that this 
+        complex sequence of actions needs to be carried out multiple times during the overall sequence of 
+        actions that you’re issuing to your friend. One way of handling this would be to issue these 
+        instructions each time they came up:
+      </p>
+      <div class="JS-blog-example">
+        <ul class="JS-blog-list">
+          <li>"Release the handbrake for one second while tapping the letter F in morse code on the horn"</li>
+          <li>[Different step]</li>
+          <li>[Different step]</li>
+          <li>"Release the handbrake for one second while tapping the letter F in morse code on the horn"</li>
+        </ul>
+      </div> 
+      <p>
+        Much like repeating the same instruction six times in a row, though, this would be inefficient. 
+        A better solution would be to tell your friend before they start that there are going to be 
+        several steps where they’ll need to release the handbrake for one second while tapping the 
+        letter F in morse code on the horn. For one thing, this would give them a chance to 
+        practice the sequence of actions to make sure they’d got it down. It would also mean that, 
+        instead of you having to repeatedly describe the same sequence of actions, you could just refer 
+        back to your original description: “do the handbrake morse code thing.”
+      </p>
+      <p>
+        This is how functions work in JavaScript. Complex sequences of events can be bundled together and 
+        called upon at any time by referring to the name. Although JavaScript has certain functions built 
+        in, users can also build their own. 
+      </p>
+      <p class="indented-blog-example">
+        function handbrakeMorseCode() {<br>
+          <span class="line-indent">alert('release handbrake for one second')<br></span>
+          <span class="line-indent">alert('tap letter F in morse code on the horn')</span><br>
+        }
+      </p>
+      <p>
+        Functions can also have parts that are adjustable. In our car analogy, it might be that the third 
+        time the sequence of events was carried out, the handbrake needed to be released for two seconds 
+        or the morse code needed to be the letter V. With your friend, you could say, “do the handbrake 
+        thing for two seconds and the morse code thing with the letter V.” With a function, you can 
+        include ‘parameters’ that take a certain value that will be ‘passed’ to the function. The overall 
+        code will be the same but it will run with the value that you specify. 
+        <p class="indented-blog-example">
+          function handbrakeMorseCode(brakeTime, codeLetter) {<br>
+            <span class="line-indent">alert('release' + brakeTime + 'for one second')<br></span>
+            <span class="line-indent">alert('tap letter' + codeLetter + 'in morse code on the horn')</span><br>
+          }
+        </p>
+      </p>
+      <!-- <p>
+      Te Houtaewa was the fastest runner of his day and played many pranks on his peoples enemies. One morning his mother wanted kumara for the hangi (earth oven) and asked Te Houtaewa to go to the gardens at Te Kao, a short distance away. He agreed to fetch the kumara and told his mother to prepare the hangi.
+      </p>
+      <div id="photo-1">
+        <img src="../Images/sprint-1-blog-1-photo.jpg" width="600" height="400" alt="Photo of mountain and lake">
+        <figcaption class="photo-caption">
+          Photo by <a href="https://unsplash.com/@tokeller?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"><span class="link-style">Tobias Keller</span></a> 
+          on <a href="https://unsplash.com/s/photos/new-zealand?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"><span class="link-style">Unsplash</span></a>
+        </figcaption>
+      </div>
+      <p>
+      Instead of going to the nearby gardens, Te Houtaewa set off for Ahipara as he wanted to annoy some Te Rarawa people who lived there. Carrying two large baskets for the kumara, he ran like the wind, completing the journey over the hard sands of Te Oneroa a Tohe (Ninety Mile Beach) in the few hours it takes a good hangi to heat up properly. On reaching Ahipara, he went straight to the people's kumara pataka (storehouse for the sweet potatoes) situated at the foot of the hill Whangatauatia.
+      </p>
+      <p>
+      While Te Houtaewa was filling his baskets with kumara he was spotted stealing the kai (food). He was immediately recognised.
+      </p> -->
+    </div>
+    <div class="next-page">
+      <nav> 
+        <ul class="post-nav">
+          <li class="prev-post" class="link-style">Previous post</li>
+          <li class="back-to-top" class="link-style">Back to top</li>
+          <li class="next-post" class="link-style">Next post</li>
+        </ul>
+      </nav>
+    </div>
+    </div>
+    
+    <!-- this is a comment. -->
+  
+  </body>
+</html>
