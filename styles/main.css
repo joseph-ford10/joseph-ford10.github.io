@@ -306,3 +306,8 @@ a:visited {
   padding-left: 10px;
 }
 
+.reference-list {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0px;
+}
