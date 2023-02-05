@@ -1,0 +1,143 @@
+  <!DOCTYPE html>
+<html>
+  <head>
+    <title>Problem-solving</title>
+    <meta charset="UTF-8">
+    <link href="../styles/main.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="navbar">
+      <nav>
+        <ul class="navlinks">
+          <li class="navlink-one"><a href="../index.html"><span class="navlink-text">Home</span></a></li>
+          <li class="navlink-two"><a href="../about-page/about.html"><span class="navlink-text">About</span></a></li>
+          <li class="navlink-three"><a href="../contents-file/posts-list.html"><span class="navlink-text">Posts</span></a></li>
+        </ul>
+    </div>
+    <div class="post-wrapper">
+      <div class="post-title-content">
+        <h1 class="post-main-title">Problem-solving</h1>
+        <h2 class="post-subtitle">In this blog, I'll talk about my problem-solving process</h2>
+        <h3 class="post-date">5 February 2023</h3>
+      </div>
+    <div class="post-core-content">
+      <h2>What it's like to be blocked on a problem</h2>
+      <p>
+        Imagine if I were to give you a sentence and ask you to remove a certain word from that sentence. 
+        Assuming the sentence was of reasonable length, you probably wouldn’t have any difficulty with this task. 
+        You could do it on a scrap of paper or a word processor with a matter of seconds.
+      </p>
+      <p>
+        Now, imagine if I asked you to do the same to an unlimited number of potential sentences. 
+        This is where you might start thinking about automation.  
+      </p>
+      <p>
+        One of my tasks this week was to write a piece of code that would do precisely this. A lot of the heavy-lifting had 
+        been done for me: I knew which programming language I would be using to write the code (JavaScript) and I knew the test that 
+        my code would need to pass in order to be considered complete.
+      </p>
+      <p>
+        The only barrier was my own lack of knowledge and experience. 
+      </p>
+      <p>
+        Removing a word from a sentence seems like it should be should work for something as powerful as a computer. 
+        In fact, it is—once you’ve told the computer what to do. This is where the block comes in.
+      </p>
+      <p>
+        The first part of the task… well, it wasn’t easy, but I was doing okay. I knew that JavaScript couldn’t simply change a 
+        sentence and that the sentence would need to be turned into a list of separate words that could be accessed using a number. 
+        I knew, also, that the code would need to go through every single word in that list and, if it was not the word that needed to
+        be removed, add it to a new version of the sentence. 
+      </p>
+      <p>
+        This version of the code was good enough to pass the first part of the test. There was a wrinkle ahead, though: capitalisation. 
+        In the second part of the test, an instance of the word would need to be removable whether it was lowercase, UPPERCASE, or BoTh. 
+      </p>
+      <p>
+        My initial approach was to make the whole sentence lowercase (easy to do with a built-in JavaScript ‘method’) and then search 
+        for a lowercase match. This worked in removing the problem word, but created a different problem: all of the other, important 
+        capitalisation (e.g. at the beginning of the word) was removed as well. Not good enough to pass the test. 
+      </p>
+      <p>
+        I searched around for tools that might help me solve the problem. This gave me a smorgasbord of forum threads, Reddit posts, 
+        and  documentation, which was useful but overwhelming. I tried playing around with smaller snippets of code on a website 
+        called CodePen. Again, helpful, but not helpful enough to solve the problem. I tried to break the problem down to its 
+        constituent parts in plain language, but I kept running up against what seemed to be a fundamental problem: how could I create a 
+        function that could identify a word without knowing what the capitalisation of that word might be ahead of time? 
+      </p>
+      <p>
+        I eventually wrote a solution. I won’t bore you with the details, but it was long-winded, convoluted—and enough to pass the test. 
+        I moved on to the next task, feeling both satisfied and uneasy. I couldn’t shake the feeling that I’d missed something. 
+      </p>
+      <p>
+        Well, of course I had! You know that JavaScript method I mentioned above, where it can easily make words lowercase? 
+        Turns out I’d just been using it in the wrong place. Instead of having to change my whole approach, my original code could have 
+        been slightly tweaked to pass both tests. 
+      </p>
+      <p>
+        What went wrong here? Well, that lack of knowledge and experience surely played its part. All of this happened towards the end of 
+        the day, as well. And maybe, in the same way that chess players sometimes miss an obvious threat, I overthought the problem and 
+        lost sight of the obvious. It happens. 
+      </p>
+      <p>
+        Either way, it was a learning experience. For one thing, I learned about more aspects of JavaScript than I would have done 
+        otherwise. I also learned that when a problem seems overwhelming—particularly after a long day—sometimes it’s best to take a break. 
+      </p>
+      <h3>An elegant solution</h3>
+      <p>
+        In the last section, I talked about a time that I was blocked on a problem and spent a lot of time finding a rather clunky 
+        solution. Now I’m going to describe a time that I found an elegant solution to a problem in a relatively short amount of time.
+      </p>
+      <p>
+        The problem was to add some data to a JavaScript ‘object.’ Again without going into the details too much, the idea was that the 
+        code would be ‘passed’ one set of values. However, these values would need to be ‘paired’ with a set of ‘keys’ which I would have 
+        to find a way of putting in. 
+      </p>
+      <p>
+        One way of doing this would be to add each key and value individually. This would have worked but it didn’t feel, well, 
+        elegant enough. So, I decided to try a different approach where I would create a list of keys to mirror the list of values. 
+        These could then, using a ‘loop’, be put in alongside each other, cutting down on the amount of code needed.
+      </p>
+      <p>
+        I wasn’t sure if this would work, so I hopped over to CodePen to start experimenting with bits of code. I got something that 
+        seemed to work quite quickly, but it still wasn’t clear if it would work with the rest of my code. I tried it and… yes, it worked! 
+      </p>
+      <p>
+        In some ways, this problem was just as complex as the one described above. I would love to be able to describe exactly what was 
+        different about it, but I don’t know. It was certainly another variation on a lesson I’ve learned several times in my life: 
+        that the amount of time put into something will not necessarily be reflected in the outcome of it. 
+      </p>
+      <h3>Problem-solving techniques</h3>
+      <p>
+        I’ve discussed a few problem-solving techniques already in this post. Clearly, I feel happy searching the internet for help, 
+        although that can be overwhelming. Writing down a problem and talking through it aloud also come naturally to me, though I’ve yet 
+        to enlist a rubber ducky to act as an interlocutor for the latter practice. If I’m really stuck, I’ll hop over to CodePen and 
+        experiment with snippets of code, console.log-ing every step of the way to see where the problem lies.
+      </p>
+      <p>
+        One technique I haven’t tried yet is asking directly for help. This might come from a natural discomfort with doing so, 
+        though it could equally be that I’ve yet to run into a problem where I’ve needed to. I’ve always had it in mind that I would ask 
+        directly for help if I was completely stumped and simply could not see a way forward. The block described above (along with other, 
+        similar blocks that I’ve experienced this week), while challenging, did not meet this criteria because the solution always seemed 
+        within reach if I could just look at a problem in a different way. 
+      </p>
+      <p>
+        Still, I hope I will be comfortable asking for help if I really need it. And I hope that writing a reflective blog post like this 
+        will also help to improve my problem-solving skills going forward. 
+      </p>
+    </div>
+    <div class="next-page">
+      <nav> 
+        <ul class="post-nav">
+          <li class="prev-post" class="link-style">Previous post</li>
+          <li class="back-to-top" class="link-style">Back to top</li>
+          <li class="next-post" class="link-style">Next post</li>
+        </ul>
+      </nav>
+    </div>
+    </div>
+    
+    <!-- this is a comment. -->
+  
+  </body>
+</html>
